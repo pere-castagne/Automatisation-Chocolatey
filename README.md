@@ -1,4 +1,4 @@
-Depuis PowerShell grâce à Chocolatey comme un système Linux, nous pouvons :
+Depuis PowerShell ou CMD grâce à Chocolatey comme un système Linux, nous pouvons :
 Installer des applications depuis internet.
 Mettre à jour les applications.
 Désinstaller des applications.
@@ -9,8 +9,9 @@ Windows 7+ / Windows Server 2003+
 PowerShell v2+
 .NET Framework 4+
 
-Installation de Chocolatey :
+Installation de Chocolatey (PowerShell):
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
 choco feature enable -n allowGlobalConfirmation
 
 Installation d'une application :
@@ -27,4 +28,6 @@ https://community.chocolatey.org/packages
 
 Désinstaller Chocolatey :
 choco uninstall chocolatey
+
+(PowerShell)
 Remove-Item -Force -Recurse -Path "C:\ProgramData\chocolatey"
