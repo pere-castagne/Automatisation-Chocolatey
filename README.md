@@ -1,4 +1,4 @@
-Depuis PowerShell ou CMD grâce à Chocolatey comme un système Linux, nous pouvons :
+Depuis PowerShell ou en invite de commande grâce à Chocolatey comme un système Linux, nous pouvons :
 Installer des applications depuis internet.
 Mettre à jour les applications.
 Désinstaller des applications.
